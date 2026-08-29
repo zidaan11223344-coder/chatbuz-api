@@ -1,4 +1,4 @@
-name = "chatbuz-api"
+name = "chatbuz-api-v2"
 main = "src/worker.js"
 compatibility_date = "2026-08-29"
 workers_dev = true
@@ -9,7 +9,7 @@ CORS_ORIGIN = "*"
 [[d1_databases]]
 binding = "DB"
 database_name = "chatbuz-db"
-database_id = "PUT_YOUR_D1_DATABASE_ID_HERE"
+database_id = "549d50d0-64e3-4ba8-a1b4-c9d07ac4a17d"
 
 # Optional: create an R2 bucket if you later add image/file uploads.
 # [[r2_buckets]]
