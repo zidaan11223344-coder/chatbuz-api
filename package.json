@@ -1,0 +1,19 @@
+{
+  "name": "chatbuz-cloudflare-api",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:create": "wrangler d1 create chatbuz-db",
+    "db:migrate": "wrangler d1 execute chatbuz-db --remote --file=src/schema.d1.sql",
+    "db:local": "wrangler d1 execute chatbuz-db --local --file=src/schema.d1.sql"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3"
+  },
+  "devDependencies": {
+    "wrangler": "^4.35.0"
+  }
+}
