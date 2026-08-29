@@ -1,0 +1,16 @@
+مشروع ChatBuz الصحيح لـ Cloudflare Workers
+
+المجلد الصحيح للنشر هو هذا المجلد نفسه.
+لا ترفع مجلد original ولا الملفات الموجودة داخله؛ تلك نسخة المصدر القديمة فقط.
+
+الملفات المهمة:
+- wrangler.toml
+- package.json
+- src/worker.js
+- src/schema.d1.sql
+
+مهم:
+1) هذا Backend (Worker API)، وليس موقع ملفات ثابتة.
+2) لا تستخدم خيار «قم بتحميل ملفاتك الثابتة» لهذا المشروع.
+3) يجب إنشاء Worker ثم ربط D1 وتعيين JWT_SECRET ثم النشر.
+4) قبل النشر عدّل database_id في wrangler.toml بعد إنشاء قاعدة D1.
